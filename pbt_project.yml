@@ -1,0 +1,65 @@
+name: NeWPy
+description: ''
+version: 0.0.1
+author: kishore@simpledatalabs.com
+language: python
+buildSystem: ''
+buildSystemDetails:
+  artefactID: newpy
+  parentArtefactID: kishoresimpledatalabs.com_team
+  buildSystem: wheel
+  author: null
+  createdAt: '2023-05-09 13:28:09'
+  modifiedAt: '2023-05-09 13:28:09'
+pipelines:
+  pipelines/newLookup:
+    name: newLookup
+    description: ''
+    author: kishore@simpledatalabs.com
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2023-05-09 13:28:09'
+    modifiedAt: '2023-05-09 13:33:09'
+    datasets:
+      inputs:
+      - datasets/fooDataset
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets:
+  datasets/fooDataset:
+    name: fooDataset
+    description: ''
+    author: kishore@simpledatalabs.com
+    createdAt: '2023-05-09 13:29:13'
+    modifiedAt: '2023-05-09 13:29:13'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 1
+        datasetType: File
+        description: ''
+        author: kishore@simpledatalabs.com
+        createdAt: '2023-05-09 13:29:13'
+        modifiedAt: '2023-05-09 13:29:13'
+templates: {}
+jobs: {}
+functions:
+  author: null
+  createdAt: '2023-05-09 13:28:09'
+  modifiedAt: '2023-05-09 13:28:09'
+  gems: {}
+  udfs: {}
+  udafs: {}
+  expressions: {}
+subgraphs: {}
+sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies: '[]'
+projectDependencies: {}
+pipelineConfigurations: {}

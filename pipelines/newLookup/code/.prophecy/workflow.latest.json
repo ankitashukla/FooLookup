@@ -1,0 +1,194 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "1",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "kishoresimpledatalabs.com_team.newpy.functions",
+      "sharedFunctionPackageNames" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "newlookup",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "ndO0BhdCeAnlmJyd-G9P-$$dECRvfUHk9AZ01_1371GH",
+    "source" : "Dp8OCGO37Bp-mHmHdm5Ut$$TR6tTWpra1b_tH1qHCesQ",
+    "sourcePort" : "djTCMHuZuaHFosUCRYBno$$0TID5uIisDMR6EpEMVGtm",
+    "target" : "VdpwkHLoINY0ZKY7XATdg$$ygzKIFQhI4_vYlwVIuDRY",
+    "targetPort" : "rm8DUP4DrJUwsN0CnaKEo$$PibSt_zCwoG3xipix6tg9"
+  }, {
+    "id" : "p0u_Xvd1TSPngx9qEnG5n",
+    "source" : "Dp8OCGO37Bp-mHmHdm5Ut$$TR6tTWpra1b_tH1qHCesQ",
+    "sourcePort" : "djTCMHuZuaHFosUCRYBno$$0TID5uIisDMR6EpEMVGtm",
+    "target" : "1xdvG4Zo4RrFM-ovFaxdY$$VzYotYm8V7wR3ROiH0ueA",
+    "targetPort" : "vNxkCu2S0_NK6gTzFx7cY$$IRUWCRFHRpGq3iW3lXttN"
+  } ],
+  "processes" : {
+    "Dp8OCGO37Bp-mHmHdm5Ut$$TR6tTWpra1b_tH1qHCesQ" : {
+      "id" : "Dp8OCGO37Bp-mHmHdm5Ut$$TR6tTWpra1b_tH1qHCesQ",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "fooDataset",
+        "slug" : "fooDataset",
+        "x" : 140,
+        "y" : 160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "djTCMHuZuaHFosUCRYBno$$0TID5uIisDMR6EpEMVGtm",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/fooDataset"
+      }
+    },
+    "1xdvG4Zo4RrFM-ovFaxdY$$VzYotYm8V7wR3ROiH0ueA" : {
+      "id" : "1xdvG4Zo4RrFM-ovFaxdY$$VzYotYm8V7wR3ROiH0ueA",
+      "component" : "Lookup",
+      "metadata" : {
+        "label" : "Lookup_1",
+        "slug" : "Lookup_1",
+        "x" : 380,
+        "y" : 100,
+        "phase" : -1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "vNxkCu2S0_NK6gTzFx7cY$$IRUWCRFHRpGq3iW3lXttN",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "isRange" : false,
+        "processName" : "Report",
+        "keyColumns" : [ "id" ],
+        "valueColumns" : [ "id" ]
+      }
+    },
+    "VdpwkHLoINY0ZKY7XATdg$$ygzKIFQhI4_vYlwVIuDRY" : {
+      "id" : "VdpwkHLoINY0ZKY7XATdg$$ygzKIFQhI4_vYlwVIuDRY",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : 320,
+        "y" : 280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "rm8DUP4DrJUwsN0CnaKEo$$PibSt_zCwoG3xipix6tg9",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "PIvxq2yKkrSjYgj3KYag_$$ajNuMUBAuG_Xw9hchwkF-",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "python",
+        "expressions" : [ {
+          "target" : "fromLookup",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Report(id)['id']"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "rm8DUP4DrJUwsN0CnaKEo$$PibSt_zCwoG3xipix6tg9##id" ]
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  }
+}
