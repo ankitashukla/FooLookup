@@ -39,3 +39,11 @@ class Reformat_1Test(BaseTestCase):
               defaultConfFile = None
             )
         )
+        dfgraph_Lookup_1 = createDfFromResourceFiles(
+            self.spark,
+            'test/resources/data/newlookup/graph/Lookup_1/schema.json',
+            'test/resources/data/newlookup/graph/Lookup_1/data.json',
+            "in0"
+        )
+        from newlookup.graph.Lookup_1 import Lookup_1
+        Lookup_1(self.spark, dfgraph_Lookup_1)

@@ -1,0 +1,18 @@
+{
+  "vNxkCu2S0_NK6gTzFx7cY$$IRUWCRFHRpGq3iW3lXttN" : {
+    "values" : [ [ "1" ], [ "2" ], [ "3" ] ],
+    "schema" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : "string",
+        "nullable" : true,
+        "metadata" : {
+          "description" : "",
+          "mappings" : [ ],
+          "tags" : [ ]
+        }
+      } ]
+    }
+  }
+}
