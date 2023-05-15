@@ -2,7 +2,7 @@
   "unitTests" : [ {
     "data" : {
       "rm8DUP4DrJUwsN0CnaKEo$$PibSt_zCwoG3xipix6tg9" : {
-        "values" : [ ],
+        "values" : [ [ "1" ] ],
         "schema" : {
           "type" : "struct",
           "fields" : [ {

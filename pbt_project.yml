@@ -20,7 +20,7 @@ pipelines:
     artefactID: ''
     language: python
     createdAt: '2023-05-09 13:28:09'
-    modifiedAt: '2023-05-15 12:43:08'
+    modifiedAt: '2023-05-15 14:56:13'
     datasets:
       inputs:
       - datasets/fooDataset
