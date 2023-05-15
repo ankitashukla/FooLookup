@@ -1,0 +1,175 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "1",
+    "jobId" : "jobs/test2",
+    "name" : "test2",
+    "schedule" : "0 0 0 1/1 * ? *",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "Small",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "84",
+      "name" : "sample",
+      "clusterSizes" : {
+        "default" : "Small",
+        "availableClusterSizes" : [ "Small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "56",
+      "name" : "demo-rs",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
+    }, {
+      "id" : "65",
+      "name" : "small",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "1",
+      "name" : "dev",
+      "clusterSizes" : {
+        "default" : "Small",
+        "availableClusterSizes" : [ "Small" ]
+      }
+    }, {
+      "id" : "92",
+      "name" : "NewDatabricksSpark",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    } ]
+  },
+  "processes" : {
+    "mU0ntILWtGGxmy5HPYDBq$$q8PzUjK-Dibta48OuMH7B" : {
+      "id" : "mU0ntILWtGGxmy5HPYDBq$$q8PzUjK-Dibta48OuMH7B",
+      "component" : "DBT",
+      "metadata" : {
+        "label" : "DBT_0",
+        "slug" : "DBT_0",
+        "x" : 140,
+        "y" : 160
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "y8T_FV1Lq_IXW_ZR0N8ma$$6mQe2IvjcufaHCsUn5lz1",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "paZ7PxQRwHk8MRd2R5FqV$$loAnhuFL2PCtt14CHD6sw",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "execSeed" : true,
+        "execRun" : true,
+        "gitEntity" : "branch",
+        "projectId" : "",
+        "runOnlyModel" : "false",
+        "loadingModels" : false,
+        "profile" : "run_profile",
+        "gitEntityValue" : "",
+        "execDeps" : true,
+        "execTest" : false,
+        "currentProjectModels" : [ ]
+      }
+    },
+    "hcCwZI6mCIX14a-gzCNbW$$Q18Qv-tBUkTPimtnXnnKs" : {
+      "id" : "hcCwZI6mCIX14a-gzCNbW$$Q18Qv-tBUkTPimtnXnnKs",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Pipeline_1",
+        "slug" : "Pipeline_1",
+        "x" : 300,
+        "y" : 180
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "GLHrIkGmERuC89qe0PkLD$$Waugg0x8XkRY-vanDDfxN",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "8Q4Bn-NAXNbhPk5FNLmwH$$xxPiXqIoteaXLTfBIsped",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "pipelineId" : "",
+        "configurations" : {
+          "schema" : [ ],
+          "instances" : { },
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "R3JGlgyLuPWI1HvwCKpPC$$X19I7HmCK5uHSDWaQ95Us",
+    "source" : "mU0ntILWtGGxmy5HPYDBq$$q8PzUjK-Dibta48OuMH7B",
+    "target" : "hcCwZI6mCIX14a-gzCNbW$$Q18Qv-tBUkTPimtnXnnKs",
+    "sourcePort" : "paZ7PxQRwHk8MRd2R5FqV$$loAnhuFL2PCtt14CHD6sw",
+    "targetPort" : "GLHrIkGmERuC89qe0PkLD$$Waugg0x8XkRY-vanDDfxN"
+  } ]
+}

@@ -1,0 +1,213 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "1",
+    "jobId" : "jobs/test",
+    "name" : "test",
+    "schedule" : "0 0 0 1/1 * ? *",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "Small",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "84",
+      "name" : "sample",
+      "clusterSizes" : {
+        "default" : "Small",
+        "availableClusterSizes" : [ "Small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "56",
+      "name" : "demo-rs",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
+    }, {
+      "id" : "65",
+      "name" : "small",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "1",
+      "name" : "dev",
+      "clusterSizes" : {
+        "default" : "Small",
+        "availableClusterSizes" : [ "Small" ]
+      }
+    }, {
+      "id" : "92",
+      "name" : "NewDatabricksSpark",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    } ]
+  },
+  "processes" : {
+    "kplyXyBrs4lhsyPQPtqMT$$XfU_VigVmphapv_OSw8hY" : {
+      "id" : "kplyXyBrs4lhsyPQPtqMT$$XfU_VigVmphapv_OSw8hY",
+      "component" : "DBT",
+      "metadata" : {
+        "label" : "DBT_0",
+        "slug" : "DBT_0",
+        "x" : 140,
+        "y" : 160
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "KSIFtjomjMOWdtPSP6rQ7$$8JPRTq23_y7_IVv24QJ_e",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "7Ms3iE3E7YKmvses_m_pk$$UMxXeEInlmP_Wz4zQkAnY",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "execSeed" : true,
+        "execRun" : true,
+        "gitEntity" : "branch",
+        "projectId" : "",
+        "runOnlyModel" : "false",
+        "loadingModels" : false,
+        "profile" : "run_profile",
+        "gitEntityValue" : "",
+        "execDeps" : true,
+        "execTest" : false,
+        "currentProjectModels" : [ ]
+      }
+    },
+    "zT7QneRIh23-nmAxmaU12$$mbiSjEZ1n6m2jxx_U896i" : {
+      "id" : "zT7QneRIh23-nmAxmaU12$$mbiSjEZ1n6m2jxx_U896i",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Pipeline_1",
+        "slug" : "Pipeline_1",
+        "x" : 340,
+        "y" : 240
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "9jeBG-0_N7c133a5P5SsV$$wLdV0EbEwkVbaVk9xnx-n",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "mFWT7kdMSwe3qSMLcEpyz$$l3UQ9Gm4n-ad-03HZrlXV",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "pipelineId" : "",
+        "configurations" : {
+          "schema" : [ ],
+          "instances" : { },
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
+      }
+    },
+    "eS_5aEhhYnLNegFmicT-p$$nuXNDg37bBv7REC4xpozH" : {
+      "id" : "eS_5aEhhYnLNegFmicT-p$$nuXNDg37bBv7REC4xpozH",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : 500,
+        "y" : 260
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "sjrucBawucvrD2PKXkMxD$$pcVlW18g_JOfQ57ddMF0T",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "l4O5nCnWWl5xqg5McXcMC$$KrxVg0GBkIMoHmE5xwGhD",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "code" : ""
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "SpBWco8wPmlCns-sXKDvE$$ChWLw_7hO76GQsM284LMR",
+    "source" : "kplyXyBrs4lhsyPQPtqMT$$XfU_VigVmphapv_OSw8hY",
+    "target" : "zT7QneRIh23-nmAxmaU12$$mbiSjEZ1n6m2jxx_U896i",
+    "sourcePort" : "7Ms3iE3E7YKmvses_m_pk$$UMxXeEInlmP_Wz4zQkAnY",
+    "targetPort" : "9jeBG-0_N7c133a5P5SsV$$wLdV0EbEwkVbaVk9xnx-n"
+  }, {
+    "id" : "ARNZi5PxcCoJ2Q2CLMPxJ$$u7WvnfHI8E55cmSxluw2x",
+    "source" : "zT7QneRIh23-nmAxmaU12$$mbiSjEZ1n6m2jxx_U896i",
+    "target" : "eS_5aEhhYnLNegFmicT-p$$nuXNDg37bBv7REC4xpozH",
+    "sourcePort" : "mFWT7kdMSwe3qSMLcEpyz$$l3UQ9Gm4n-ad-03HZrlXV",
+    "targetPort" : "sjrucBawucvrD2PKXkMxD$$pcVlW18g_JOfQ57ddMF0T"
+  } ]
+}
